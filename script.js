@@ -1,12 +1,13 @@
 var testWord = prompt("Enter a word");
 
 function isPalindrome(word){
-	// Returns true if palindrome
-	// Returns false otherwise	
+    word = word.toLowerCase();
+	rev_word = word.split('').reverse().join('');
+	return (word == rev_word)
 }
 
 if(isPalindrome(testWord)){
 	alert("OH COOL A PALINDROME");
 }else{
-	alert(testWord + "is not a palindrome");
+	alert("'"+testWord+"' is not a palindrome");
 }
