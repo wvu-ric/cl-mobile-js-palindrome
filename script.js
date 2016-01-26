@@ -1,12 +1,24 @@
 var testWord = prompt("Enter a word");
 
-function isPalindrome(word){
-	// Returns true if palindrome
-	// Returns false otherwise	
+function reverse(s){
+    return s.split("").reverse().join("");
 }
 
-if(isPalindrome(testWord)){
-	alert("OH COOL A PALINDROME");
+function isPalindrome(word){
+
+	if(reverse(word)==word) {
+		return true;
+	} else {
+		return false;
+	}
+	// Returns true if palindrome
+	// Returns false otherwise
+}
+
+
+
+if(isPalindrome (testWord)){
+	 alert("OH COOL A PALINDROME");
 }else{
-	alert(testWord + "is not a palindrome");
+	alert(testWord + " is not a palindrome");
 }
