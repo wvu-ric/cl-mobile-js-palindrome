@@ -1,8 +1,26 @@
 var testWord = prompt("Enter a word");
 
+// this makes adjustments for capital letters
+var lowerCaseTestWord = testWord.toLowerCase();
+
+// this removes any punctuation
+var noPunctuation = lowerCaseTestWord.replace(/[.,\/#!$%\^&\*;:{}=\-_`~()?]/g,"");
+
+// this removes the spaces or word dividers
+var removedSpace = noPunctuation.split(" ").join("");
+
+// this reverses the word
+var reversedTestWord = removedSpace.split('').reverse().join('');
+
+
 function isPalindrome(word){
-	// Returns true if palindrome
-	// Returns false otherwise	
+	if(removedSpace == reversedTestWord) {
+// Returns true if palindrome
+	 return true
+ 	} else {
+// Returns false otherwise
+		return false
+	}
 }
 
 if(isPalindrome(testWord)){
