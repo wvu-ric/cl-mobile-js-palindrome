@@ -1,8 +1,7 @@
-var testWord = prompt("Enter a word");
+var testWord = prompt("racecar");
 
 function isPalindrome(word){
-	// Returns true if palindrome
-	// Returns false otherwise	
+prompt("racecar");
 }
 
 if(isPalindrome(testWord)){
