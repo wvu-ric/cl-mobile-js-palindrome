@@ -1,12 +1,9 @@
-var testWord = prompt("Enter a word");
-
 function isPalindrome(word){
-	// Returns true if palindrome
-	// Returns false otherwise	
+	
+	if (word.reverse() == word){
+		console.log(word + " is a palindrome");
+	}
 }
 
-if(isPalindrome(testWord)){
-	alert("OH COOL A PALINDROME");
-}else{
-	alert(testWord + "is not a palindrome");
-}
+testword = ["racecar"]
+isPalindrome(testword);
